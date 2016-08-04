@@ -20,3 +20,4 @@ cordova plugin add https://github.com/phonegap-googlemaps-plugin/cordova-plugin-
 
 
 
+BASED ON https://github.com/aaronksaunders/ionic2GMapNative
