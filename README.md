@@ -1,9 +1,11 @@
 # Calender42Maps 
 
+1) Make sure you have development environment
+
 ```npm install -g ionic@beta```
 ```npm install -g cordova```
 
-Go into project
+2) Go into project
 ```npm install```
 
 ```console
