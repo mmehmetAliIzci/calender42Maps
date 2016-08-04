@@ -12,4 +12,9 @@ cordova plugin add https://github.com/phonegap-googlemaps-plugin/cordova-plugin-
 
 `cordova prepare`
 
+#Demo
+
+![alt tag](https://github.com/mmehmetAliIzci/calender42Maps/blob/master/demo.gif)
+
+
 
