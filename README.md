@@ -13,7 +13,3 @@ cordova plugin add https://github.com/phonegap-googlemaps-plugin/cordova-plugin-
 `cordova prepare`
 
 
-###Manualy Install Correct Version of Module
-You MUST install the plugin from the HEAD on the github repo, using the following command, the `cordova prepare` command will use the correct version which is saved in the `config.xml`
-
-
