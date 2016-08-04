@@ -5,5 +5,34 @@
 </ion-navbar>
 
 <ion-content class="home">
-  <div  style="height: 100%; width: 100%" id="map_canvas"></div>
+  <div style="height: 60%; width: 100%" id="map_canvas"></div>
+  <ion-row>
+    <ion-col width-25>
+      <button (click)="addBtn(1)">Add Dest</button>
+    </ion-col>
+    <ion-col width-25>
+      <button (click)="addBtn(2)">Add Driv</button>
+    </ion-col>
+    <ion-col width-25>
+      <button (click)="addBtn(3)">Add Pass</button>
+    </ion-col>
+    <ion-col width-25>
+      <button *ngIf="!showGreen" disabled="true" danger outline>NOT OK</button>
+      <button *ngIf="showGreen" disabled="true" secondary outline>OK</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-33>
+      <img src="http://maps.google.com/mapfiles/kml/pal4/icon15.png" height="30" width="30"> - <img src="https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png" height="30" width="30"> {{DriverDestinationDistance}}
+    </ion-col>
+    <ion-col width-33>
+      <img src="http://maps.google.com/mapfiles/kml/pal3/icon32.png" height="30" width="30"> - <img src="https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png" height="30" width="30"> {{PassengerDestinationDistance}}
+    </ion-col>
+    <ion-col width-33>
+      <img src="http://maps.google.com/mapfiles/kml/pal4/icon15.png" height="30" width="30"> - <img src="http://maps.google.com/mapfiles/kml/pal3/icon32.png" height="30" width="30"> {{DriverPassengerDistance}}
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    {{(DriverPassengerDistance + DriverDestinationDistance)/3}} < {{PassengerDestinationDistance/3}}
+  </ion-row>
 </ion-content>
